@@ -1,2 +1,3 @@
-# Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing
-repository ini digunakan untuk tugas submisi kelas Belajar Analisis Data dengan Python di Dicoding
+# Cara Menjalankan Dashboard
+pip install -r requirements.txt
+streamlit run dashboard_bike_sharing.py
