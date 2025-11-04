@@ -75,6 +75,8 @@ pip install -r requirements.txt
 # Jalankan dashboard
 streamlit run dashboard_bike_sharing.py
 
+```
+
 👤 Tentang Saya
 
 Saya Abrar Argya Adana, seorang Data Analyst Enthusiast dengan ketertarikan pada Data Visualization dan Insight Storytelling.
