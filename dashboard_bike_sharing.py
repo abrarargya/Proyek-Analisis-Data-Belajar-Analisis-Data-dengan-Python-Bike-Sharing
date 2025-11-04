@@ -132,7 +132,7 @@ season_name_map = {
 st.subheader("Rata - Rata Penyewaan Sepeda Berdasarkan Musim")
  
 fig, ax = plt.subplots(figsize=(35, 15))
-colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#F99096"]
+colors = ["#D3D3D3", "#D3D3D3", "#D3D3D3", "#90CAF9"]
 #urutkan jumlah rata - rata dari terkecil
 season_rental_sorted = season_rental.sort_values(by=('cnt', 'mean'), ascending=True)
 #ambil indeks musim dari dataset dari 1 sampai 4 dan dimasukan ke dalam list
@@ -168,7 +168,7 @@ st.subheader("Rata - Rata Penyewaan Sepeda Berdasarkan Cuaca")
  
 fig, ax = plt.subplots(figsize=(35, 15))
  
-colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#F99096"]
+colors = ["#D3D3D3", "#D3D3D3", "#D3D3D3", "#90CAF9"]
 #urutkan jumlah rata - rata dari terkecil
 weather_rental_sorted = weather_rental.sort_values(by=('cnt', 'mean'), ascending=True)
 #ambil indeks cuaca dari dataset dari 1 sampai 4 dan dimasukan ke dalam list
@@ -204,3 +204,4 @@ ax1.axis('equal')
 
 
 st.pyplot(fig1)
+
