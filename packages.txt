@@ -1,7 +1,0 @@
-python3.11
-
-libjpeg-dev
-zlib1g-dev
-
-build-essential
-
