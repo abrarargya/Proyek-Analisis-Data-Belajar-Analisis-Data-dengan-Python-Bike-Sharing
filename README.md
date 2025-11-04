@@ -63,7 +63,7 @@ Berikut beberapa temuan dari hasil analisis:
 
 ```bash
 # Clone repository
-git clone <repo-url>
+git clone https://github.com/abrarargya/Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing
 
 # Masuk ke direktori proyek
 cd bike-sharing-analysis
