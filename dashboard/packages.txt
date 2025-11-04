@@ -1,8 +1,0 @@
-# packages.txt file (must be clean, no comments on a line with a package)
-# Pinning Python to 3.11 to avoid 3.13 build issues
-python3.11
-
-# System libraries needed for building Pillow
-libjpeg-dev
-zlib1g-dev
-build-essential
