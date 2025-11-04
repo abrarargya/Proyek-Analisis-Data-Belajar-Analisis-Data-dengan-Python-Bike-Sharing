@@ -1,116 +1,88 @@
-🚴‍♂️ Analisis Data Bike Sharing dengan Python & Streamlit
+# 📊 Bike Sharing Data Analysis  
+Dashboard Interaktif dengan Python & Streamlit
 
-📌 Deskripsi Proyek
+Proyek ini merupakan analisis data penyewaan sepeda menggunakan dataset publik *Bike Sharing Dataset*. Analisis ini dilakukan untuk mengidentifikasi pola penggunaan sepeda berdasarkan waktu, musim, kondisi cuaca, serta jenis pelanggan. Hasil analisis divisualisasikan dalam bentuk dashboard interaktif menggunakan Streamlit untuk memudahkan eksplorasi data.
 
-Proyek ini bertujuan untuk menganalisis pola penyewaan sepeda berdasarkan data Bike Sharing Dataset dari Kaggle. Analisis dilakukan menggunakan Python dan divisualisasikan melalui dashboard interaktif berbasis Streamlit.
+---
 
-Dashboard: https://abrar-bike-sharing-dicoding.streamlit.app/
+## 🚀 Live Dashboard
+🔗 Streamlit App: https://abrar-bike-sharing-dicoding.streamlit.app/
 
-Notebook Analisis: (klik)
+## 📁 Repository
+🔗 Google Colab Notebook:  
 https://github.com/abrarargya/Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing/blob/main/Proyek_Analisis_Data_Bike_Sharing.ipynb
 
-🧠 Business Questions
+---
 
-Kapan waktu terbaik untuk menyediakan lebih banyak sepeda?
+## 📌 Tujuan Proyek
+- Menganalisis faktor-faktor yang memengaruhi jumlah peminjaman sepeda
+- Mengetahui pola penggunaan sepeda sepanjang waktu
+- Menyajikan hasil analisis secara visual dan interaktif
 
-Apakah cuaca memengaruhi jumlah penyewaan?
+---
 
-Segmen pelanggan mana yang paling dominan?
+## 📍 Dataset
+Dataset bersumber dari Kaggle:  
+https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset  
+Jumlah data: 17.389 baris
 
-Musim apa yang memberikan kontribusi terbesar?
+Fitur penting meliputi:
+- `dteday` → Tanggal
+- `season`, `weathersit` → Informasi musim dan cuaca
+- `cnt` → Jumlah total peminjaman sepeda
+- `casual`, `registered` → Kategori pengguna
+- Variabel waktu: jam, hari, bulanan, tahunan
 
-📊 Tujuan Analisis
+---
 
-Mengidentifikasi pola penyewaan berdasarkan waktu, musim, dan cuaca
+## 🔍 Insight Utama
 
-Menyediakan insight untuk mendukung pengambilan keputusan bisnis
+Berikut beberapa temuan dari hasil analisis:
 
-Memahami segmentasi pelanggan casual vs registered
+1. **Tren tahunan meningkat di 2012**, dengan puncak penyewaan rata-rata sebanyak **7.286** pada bulan **September**, sebelum akhirnya menurun di akhir tahun.
+2. **Musim gugur** memiliki rata-rata peminjaman tertinggi (**5.644** peminjaman), sedangkan **musim semi** terendah (**2.604** peminjaman).
+3. Kondisi cuaca sangat berpengaruh:
+   - Cuaca **cerah atau cerah berawan** → rata-rata **201** peminjaman
+   - Cuaca **hujan/salju lebat** → rata-rata hanya **74** peminjaman
+4. Mayoritas pengguna merupakan **registered users** dengan persentase **81,64%**, sedangkan **casual users** hanya **18,4%**.
 
-🗂️ Sumber Data
+---
 
-Dataset Kaggle:
-https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
+## 🛠️ Tools & Technologies
 
-🔧 Tools dan Teknologi
+| Tools / Library | Keterangan |
+|----------------|-----------|
+| Python | Bahasa pemrograman utama |
+| Pandas, NumPy | Data wrangling & data manipulation |
+| Matplotlib, Seaborn | Visualisasi data |
+| Streamlit | Dashboard interaktif |
+| Scikit-Learn | (opsional) Analisis lanjutan |
 
-Python (Pandas, Matplotlib, Seaborn)
+---
 
-Streamlit
+## 📌 Cara Menjalankan Dashboard
 
-GitHub
+```bash
+# Clone repository
+git clone <repo-url>
 
-✅ Insight Utama
+# Masuk ke direktori proyek
+cd bike-sharing-analysis
 
-📈 1. Tren Penyewaan Tahunan
-
-Puncak rata-rata terjadi pada September 2012 → 7.286 penyewaan
-
-Setelah bulan tersebut, tren penyewaan menurun
-
-🍂 2. Perbedaan Berdasarkan Musim
-
-Musim	Rata-rata Penyewaan
-Spring	2.604 (terendah)
-Fall	5.644 (tertinggi)
-
-🌦 3. Pengaruh Cuaca
-
-Cuaca buruk (hujan/salju lebat) → 74 penyewaan
-
-Cuaca cerah → 201 penyewaan
-
-👥 4. Segmentasi Pelanggan
-
-Jenis Pelanggan	Persentase
-Registered	81.64%
-Casual	18.4%
-🎯 Rekomendasi Bisnis
-
-Tambah unit sepeda pada jam sibuk & musim Fall
-
-Promo dan diskon di musim Spring yang rendah permintaan
-
-Tingkatkan retensi pelanggan casual → registered
-
-Optimalkan operasional saat peak commuter (17.00–19.00)
-
-🖥️ Tampilan Dashboard
-
-Akses aplikasi:
-👉 https://abrar-bike-sharing-dicoding.streamlit.app/
-
-🏃 Cara Menjalankan Project (How to Run)
-
-1️⃣ Clone repository:
-
-git clone https://github.com/abrarargya/Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing.git
-
-
-2️⃣ Masuk ke folder project:
-
-cd Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing
-
-
-3️⃣ Install dependency:
-
+# Install dependencies
 pip install -r requirements.txt
 
-
-4️⃣ Jalankan Streamlit:
-
+# Jalankan dashboard
 streamlit run dashboard_bike_sharing.py
 
+👤 Tentang Saya
 
-Jika sudah, dashboard akan terbuka otomatis di browser ✅
+Saya Abrar Argya Adana, seorang Data Analyst Enthusiast dengan ketertarikan pada Data Visualization dan Insight Storytelling.
 
-📎 Struktur Project
-├── dashboard_bike_sharing.py
-├── Proyek_Analisis_Data_Bike_Sharing.ipynb
-├── requirements.txt
-└── README.md
+🔗 LinkedIn: www.linkedin.com/in/abrar-argya-adana
 
-✍️ Kontributor
+📬 Kontak
 
-Abrar Argya Adana — Data Analyst
-👔 LinkedIn www.linkedin.com/in/abrar-argya-adana
+Untuk kerja sama atau diskusi terkait data, silakan hubungi saya melalui LinkedIn ☺️
+
+
