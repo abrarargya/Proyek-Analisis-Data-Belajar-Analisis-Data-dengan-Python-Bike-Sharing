@@ -1,0 +1,5 @@
+# packages.txt
+# This installs libraries needed to build Pillow and other complex packages
+libjpeg-dev
+zlib1g-dev
+python3.11  # Keep your desired Python version pinned here
