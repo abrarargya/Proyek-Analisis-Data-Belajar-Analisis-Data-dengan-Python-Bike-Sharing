@@ -56,7 +56,6 @@ Berikut beberapa temuan dari hasil analisis:
 | Pandas, NumPy | Data wrangling & data manipulation |
 | Matplotlib, Seaborn | Visualisasi data |
 | Streamlit | Dashboard interaktif |
-| Scikit-Learn | (opsional) Analisis lanjutan |
 
 ---
 
