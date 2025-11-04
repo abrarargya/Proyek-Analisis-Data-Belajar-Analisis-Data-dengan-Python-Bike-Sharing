@@ -34,8 +34,8 @@ def create_total_registered_day(day_df):
     return total_registered_day
 
 #load files
-days_df = pd.read_csv("dashboard/day_clean_df.csv")
-hours_df = pd.read_csv("dashboard/hour_clean_df.csv")
+days_df = pd.read_csv("https://raw.githubusercontent.com/abrarargya/Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing/refs/heads/main/day_clean_df.csv")
+hours_df = pd.read_csv("https://raw.githubusercontent.com/abrarargya/Proyek-Analisis-Data-Belajar-Analisis-Data-dengan-Python-Bike-Sharing/refs/heads/main/hour_clean_df.csv")
 
 # sort dteday columns and make sure it's in datetime format
 datetime_columns = ["dteday"]
@@ -201,5 +201,6 @@ fig1, ax1 = plt.subplots()
 ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',colors=["#D3D3D3", "#90CAF9"],
         shadow=True, startangle=90)
 ax1.axis('equal')  
+
 
 st.pyplot(fig1)
