@@ -1,7 +1,8 @@
-Babel==2.17.0
-matplotlib==3.10.7
-pandas==2.3.3
-seaborn==0.13.2
-streamlit==1.12.0
-altair==5.2.0
-Pillow==10.2.0
+# packages.txt file (must be clean, no comments on a line with a package)
+# Pinning Python to 3.11 to avoid 3.13 build issues
+python3.11
+
+# System libraries needed for building Pillow
+libjpeg-dev
+zlib1g-dev
+build-essential
