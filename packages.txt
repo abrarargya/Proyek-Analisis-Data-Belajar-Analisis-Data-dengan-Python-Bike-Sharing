@@ -1,5 +1,11 @@
-#packages.txt
-#This installs libraries needed to build Pillow and other complex packages
+# packages.txt file
+
+# 1. Pin the desired Python version (e.g., Python 3.11 is recommended for stability)
+python3.11
+
+# 2. Install core system development libraries needed for Pillow (and many other binary packages)
 libjpeg-dev
 zlib1g-dev
-python3.11  # Keep your desired Python version pinned here
+
+# 3. Add other necessary system packages (common dependencies for scientific/data packages)
+build-essential
